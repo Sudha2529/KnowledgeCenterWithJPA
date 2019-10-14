@@ -4,14 +4,14 @@
 # Set Up Steps:
 
  1) Create schema in MYSQL using the query , Tables will be created by JPA.
-	   CREATE SCHEMA `knowledgecenter` ;
+	  ` CREATE SCHEMA `knowledgecenter`` ;
 
 
  2) Change DB username and Password in AppConfig.java (line No. 25,26)
 
- 3) Build the project using the command  -->  mvn clean install
+ 3) Build the project using the command  -->  `mvn clean install`
 
- 4) Run the application in maven embedded tomcat  using the command --> mvn tomcat7:run
+ 4) Run the application in maven embedded tomcat  using the command --> `mvn tomcat7:run`
 
  5) Swagger endpoints can be found at the url
 
