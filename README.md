@@ -1,6 +1,25 @@
 # KnowledgeCenterWithJPA
  
 
+# Set Up Steps:
+
+ 1) Create schema in MYSQL using the query , Tables will be created by JPA.
+		     	CREATE SCHEMA `knowledgecenter` ;
+
+
+ 2)Change DB username and Password in AppConfig.java (line No. 25,26)
+
+ 3) Build the project using the command  -->  mvn clean install
+
+ 4) Run the application in maven embedded tomcat  using the command --> mvn tomcat7:run
+
+ 5) Swagger endpoints can be found at the url
+
+	   http://localhost:8080/swagger-ui.html
+
+ 6) I am not able to test Spring Security login API from Swagger/Postman, so I disabled security in this app . Security Related           Configuration can be found at SecurityConfig.java.
+
+# Description About REST APIs
 1. The Author creates the knowledgeBase, added a table  knowledgebase which contains fields knowledgeId, knowledgeDescription, supported Language.
 
    * Added a Model file "KnowledgeBase" with the above fields and setters/getters.
