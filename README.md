@@ -4,7 +4,7 @@
 # Set Up Steps:
 
  1) Create schema in MYSQL using the query , Tables will be created by JPA.
-	  ` CREATE SCHEMA knowledgecenter ;
+	   `CREATE SCHEMA knowledgecenter `;
 
 
  2) Change DB username and Password in AppConfig.java (line No. 25,26)
