@@ -20,9 +20,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		// http.csrf().disable();
-		http.authorizeRequests().antMatchers("/v2/api-docs", "/configuration/**", "/swagger*/**", "/webjars/**")
-				.permitAll().antMatchers(HttpMethod.POST, "/api/v1/document/**").hasRole("AUTHOR").anyRequest()
-				.authenticated().and().formLogin();
+		 http.csrf().disable();
+             //	http.authorizeRequests().antMatchers("/v2/api-docs", "/configuration/**", "/swagger*/**", "/webjars/**")
+	    //	.permitAll().antMatchers(HttpMethod.POST, "/api/v1/document/**").hasRole("AUTHOR").anyRequest()
+            // 				.authenticated().and().formLogin();
 	}
 }
